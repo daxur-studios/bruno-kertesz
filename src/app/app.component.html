@@ -1,6 +1,15 @@
 <mat-toolbar>
-  <a routerLink="/welcome">Home</a>
-  <a routerLink="/settings">Settings</a>
+  <a routerLink="/welcome" routerLinkActive="activeLink" class="styledLink"
+    >Home</a
+  >
+
+  <a routerLink="/online-cv" routerLinkActive="activeLink" class="styledLink"
+    >Online CV</a
+  >
+
+  <a routerLink="/settings" routerLinkActive="activeLink" class="styledLink"
+    >Settings</a
+  >
 </mat-toolbar>
 
 <router-outlet></router-outlet>

@@ -5,3 +5,6 @@
 .styledLink {
   color: var(--link);
 }
+.activeLink {
+  font-weight: bold;
+}
