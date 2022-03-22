@@ -1,0 +1,14 @@
+<p>timeline-wrapper works!</p>
+<h2>{{ config.label }}</h2>
+
+<div>
+  <div style="display: flex; justify-content: space-between">
+    <div>Label</div>
+    <div>Date</div>
+  </div>
+
+  <app-timeline-card
+    [config]="item"
+    *ngFor="let item of config.cards"
+  ></app-timeline-card>
+</div>

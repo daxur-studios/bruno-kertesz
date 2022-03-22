@@ -1,0 +1,7 @@
+:root {
+  --link: orange;
+}
+
+.styledLink {
+  color: var(--link);
+}
