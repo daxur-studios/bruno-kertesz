@@ -1,0 +1,21 @@
+<section class="timelineWrapper">
+  <div class="groupHeader">
+    <div class="formattedDateLeft">{{ data.formattedDateLeft }}</div>
+    <div class="formattedDateRight">{{ data.formattedDateRight }}</div>
+  </div>
+  <div class="timelineGrid">
+    <div
+      class="timelineCardWrapper"
+      timelineCard
+      [data]="item"
+      [cardClass]="{
+        isLast: last,
+        isNotLast: !last,
+        isFirst: first,
+        isNotFirst: !first
+      }"
+      *ngFor="let item of data.cards; let last = last; let first = first"
+      style="display: flex"
+    ></div>
+  </div>
+</section>

@@ -1,0 +1,15 @@
+.stickyActions {
+  position: sticky;
+  bottom: 0;
+  background: var(--appBackground);
+}
+
+.socialsIcon {
+  height: 30px;
+  margin-right: 1ch;
+}
+.socialsLink {
+  font-size: 1.2rem;
+  align-items: center;
+  display: flex;
+}

@@ -1,9 +1,10 @@
 :root {
-  --link: orange;
+  --link: #ff834f;
 }
 
 .styledLink {
   color: var(--link);
+  text-decoration: none;
 }
 .activeLink {
   font-weight: bold;

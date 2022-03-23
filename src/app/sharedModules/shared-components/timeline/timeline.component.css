@@ -1,0 +1,36 @@
+:host-context(:root) {
+  --timelineColor: hsl(174deg 100% 29% / 80%);
+  --avatarSize: 45px;
+  --gridGap: 1rem;
+  --timelineBorderWidth: 3px;
+  --groupHeaderSpacing: 1rem;
+}
+
+.timelineWrapper {
+  margin-bottom: 2rem;
+}
+
+.timelineGrid {
+  display: grid;
+  grid-template-columns: var(--avatarSize) 1fr;
+  grid-auto-rows: auto;
+  gap: var(--gridGap);
+  max-width: 750px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.groupHeader {
+  border-radius: var(--timelineBorderWidth);
+  display: flex;
+  justify-content: space-between;
+  border-bottom: var(--timelineBorderWidth) solid var(--timelineColor);
+  padding-bottom: 0.25rem;
+  margin-bottom: var(--groupHeaderSpacing);
+}
+
+.formattedDateRight {
+  color: var(--timelineColor);
+}

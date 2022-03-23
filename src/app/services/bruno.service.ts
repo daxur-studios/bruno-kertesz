@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { differenceInCalendarYears, differenceInYears, format } from 'date-fns';
 
-type nationality = 'Brithish' | 'Hungarian';
+type nationality = 'British' | 'Hungarian';
 
 @Injectable({
   providedIn: 'root',
@@ -12,6 +12,8 @@ export class BrunoService {
   age: number;
 
   nationality: nationality = 'Hungarian';
+
+  address = 'Eastbourne, UK';
 
   constructor() {
     this.age = differenceInYears(new Date(), this.dateOfBirth);

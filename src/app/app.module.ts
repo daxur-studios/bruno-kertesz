@@ -28,6 +28,9 @@ import { SettingsPageComponent } from './pages/settings/settings-page/settings-p
 
 import { TimelineWrapperComponent } from './pages/welcome/sections/timeline/timeline-wrapper/timeline-wrapper.component';
 import { TimelineCardComponent } from './pages/welcome/sections/timeline/timeline-wrapper/timeline-card/timeline-card.component';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { provideMessaging,getMessaging } from '@angular/fire/messaging';
 
 @NgModule({
   declarations: [
@@ -55,6 +58,9 @@ import { TimelineCardComponent } from './pages/welcome/sections/timeline/timelin
     provideStorage(() => getStorage()),
     SharedMaterialModule,
     SharedComponentsModule,
+    provideAuth(() => getAuth()),
+    provideFirestore(() => getFirestore()),
+    provideMessaging(() => getMessaging()),
   ],
   providers: [
     { provide: ScreenTrackingService, useValue: {} },

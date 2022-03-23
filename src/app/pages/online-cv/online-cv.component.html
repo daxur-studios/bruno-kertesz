@@ -1,15 +1,122 @@
-<button mat-button>Download as PDF</button>
+<div style="margin: 0 auto; padding: 16px">
+  <!-- <h1>CV</h1> -->
+  <div style="display: flex; flex-wrap: wrap">
+    <div>
+      <!--NAME-->
+      <h2 style="font-size: 5rem; line-height: 0.8">Bruno Kertesz</h2>
 
-<h1>CV</h1>
-<h2>Bruno Kertesz</h2>
-<h3>Full Stack Typescript Developer</h3>
+      <!--CURRENT JOB TITLE-->
+      <h3 style="font-size: 2rem; opacity: 0.5">
+        Full Stack Typescript Developer
+      </h3>
 
-<div>
-  <div>
-    <a href="mailto:kerteszbruno98@gmail.com" class="styledLink"
-      >kerteszbruno98@gmail.com</a
-    >
+      <!--INTRO-->
+      <div>
+        <p>
+          I am {{ bruno.age }} years old, born {{ bruno.dateOfBirthFormatted }}.
+        </p>
+        <p>My nationality is Hungarian.</p>
+        <p>
+          My UK EU Settlement Scheme Status is "settled" (I have the right to
+          work in the UK)
+        </p>
+      </div>
+
+      <!--CONTACT DETAILS-->
+      <div>
+        <div
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 32px;
+          "
+        >
+          <div style="font-size: 1.2rem">Contact me at:</div>
+          <div>
+            <a href="mailto:kerteszbruno98@gmail.com" class="styledLink"
+              >kerteszbruno98@gmail.com</a
+            >
+          </div>
+          <div>07942688136</div>
+        </div>
+
+        <div
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 1.2rem;
+            margin-bottom: 32px;
+          "
+        >
+          <div>Based in:</div>
+          <div>📍Eastbourne, UK</div>
+        </div>
+
+        <!--SOCIALS-->
+        <div
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <div style="font-size: 1.2rem">Find me on:</div>
+          <a
+            href="https://www.linkedin.com/in/bruno-kertesz-98x/"
+            target="_blank"
+            class="styledLink socialsLink"
+            ><img src="assets/icons/linkedIn.svg" class="socialsIcon" />
+            LinkedIn</a
+          >
+
+          <a
+            href="https://github.com/daxur-studios"
+            target="_blank"
+            class="styledLink socialsLink"
+          >
+            <img src="assets/icons/github.svg" class="socialsIcon" /> Github</a
+          >
+        </div>
+      </div>
+    </div>
+    <div>
+      <img
+        src="assets/images/Bruno Kertesz.png"
+        alt="Bruno Profile"
+        style="max-width: 260px"
+      />
+    </div>
   </div>
-  <div>07942688136</div>
-  <div>Eastbourne</div>
+  <!--BRUNO's TECH STACK-->
+  <section>
+    <h2 style="font-size: 2rem">My Tech Stack</h2>
+
+    <mat-list>
+      <mat-list-item>item</mat-list-item> <mat-list-item>item</mat-list-item>
+      <mat-list-item>item</mat-list-item> <mat-list-item>item</mat-list-item>
+    </mat-list>
+  </section>
+
+  <!--BRUNO's TIMELINE-->
+  <section>
+    <h2 style="font-size: 2rem">My Timeline</h2>
+    <!--EMPLOYMENT HISTORY-->
+    <dax-timeline
+      [data]="employmentTimeline"
+      [config]="employmentTimelineConfig"
+    ></dax-timeline>
+    <!--EDUCATION-->
+    <dax-timeline
+      [data]="educationTimeline"
+      [config]="educationTimelineConfig"
+    ></dax-timeline>
+  </section>
+
+  <div class="stickyActions">
+    <button mat-raised-button color="accent">
+      <mat-icon>file_download</mat-icon> Download as PDF
+    </button>
+  </div>
 </div>

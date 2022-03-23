@@ -1,0 +1,79 @@
+.timelineCardHeader {
+  display: flex;
+  gap: 0.5rem;
+}
+.avatarImg {
+  width: 100%;
+  border-radius: 100%;
+  height: var(--avatarSize);
+  border: var(--timelineBorderWidth) solid var(--timelineColor);
+  display: block;
+  width: var(--avatarSize);
+}
+.avatar {
+  position: relative;
+}
+
+.isFirst.avatar::before {
+  content: "";
+  position: absolute;
+  background-color: var(--timelineColor);
+  width: var(--timelineBorderWidth);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: calc(-1 * var(--groupHeaderSpacing));
+  bottom: 100%;
+}
+
+.isNotLast.avatar::after {
+  content: "";
+  position: absolute;
+  background-color: var(--timelineColor);
+  width: var(--timelineBorderWidth);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: calc(var(--avatarSize) + (var(--timelineBorderWidth) * 2));
+  bottom: 100%;
+  bottom: calc(-1 * var(--groupHeaderSpacing));
+}
+
+.isLast.avatar::after {
+  content: "";
+  display: none;
+  width: 0px;
+}
+
+.timelineCard {
+  background-color: #8181810a;
+  border: 1px solid var(--timelineColor);
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+  margin-left: 16px;
+  width: 100%;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+.notificationBody {
+  background-color: #72727221;
+  margin-top: 0.5rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.notificationTitle {
+  flex-grow: 1;
+  font-size: 1.1rem;
+}
+
+.notificationTime {
+  color: var(--timelineColor);
+}
+
+.longBody {
+  margin-bottom: 16px;
+}

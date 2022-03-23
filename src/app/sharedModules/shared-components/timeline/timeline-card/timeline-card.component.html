@@ -1,0 +1,30 @@
+<div class="avatar" [ngClass]="cardClass">
+  <img class="avatarImg" src="{{ data.photoURL }} " />
+</div>
+<div class="timelineCard">
+  <div class="timelineCardHeader">
+    <mat-icon class="" style="color: var(--currentColor)">{{
+      data.matIcon
+    }}</mat-icon>
+    <div class="notificationTitle">{{ data.title }}</div>
+    <div class="notificationTime">{{ data.formattedTime }}</div>
+  </div>
+  <div class="notificationBody">
+    <ng-container *ngIf="hasArrayBody; else simpleBody">
+      <ul>
+        <li
+          *ngFor="let item of data.body"
+          [ngClass]="{
+            longBody: item.length > 30
+          }"
+        >
+          {{ item }}
+        </li>
+      </ul>
+    </ng-container>
+
+    <ng-template #simpleBody>
+      {{ data.body }}
+    </ng-template>
+  </div>
+</div>
