@@ -10,7 +10,7 @@ import {
   templateUrl: './online-cv.component.html',
   styleUrls: ['./online-cv.component.css'],
   host: {
-    class: 'page-flex',
+    class: 'page-flex pointsBG',
   },
 })
 export class OnlineCvComponent implements OnInit {

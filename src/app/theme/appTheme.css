@@ -9,3 +9,7 @@
 .activeLink {
   font-weight: bold;
 }
+
+.pointsBG {
+  background: url("assets/svgBackgrounds/points.svg");
+}

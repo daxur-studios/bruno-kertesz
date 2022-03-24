@@ -31,6 +31,7 @@ import { TimelineCardComponent } from './pages/welcome/sections/timeline/timelin
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { provideMessaging,getMessaging } from '@angular/fire/messaging';
+import { TechStackGalleryComponent } from './pages/welcome/sections/tech-stack-gallery/tech-stack-gallery.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { provideMessaging,getMessaging } from '@angular/fire/messaging';
 
     TimelineWrapperComponent,
     TimelineCardComponent,
+    TechStackGalleryComponent,
   ],
   imports: [
     BrowserModule,
