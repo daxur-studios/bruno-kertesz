@@ -1,0 +1,65 @@
+<p>curve-toolbar works!</p>
+
+<div style="display: flex">
+  <!--LEFT-->
+  <div
+    [ngStyle]="{
+      flex: '1 1',
+
+      background: config.toolbarStyle.background,
+      height: config.toolbarStyle.height
+    }"
+  ></div>
+  <!--CENTRE - CIRCLE-->
+  <div class="innerBarWrapper" style="display: flex">
+    <img
+      *ngIf="true"
+      src="assets/svgToolbar/svgToolbarMiddleV3.svg"
+      class="svgToolbarMiddle"
+      [ngStyle]="{
+        transform: 'rotate(180deg)',
+        height: 'calc( ' + config.toolbarStyle.height + ' )'
+      }"
+    />
+
+    <svg
+      *ngIf="false"
+      [ngStyle]="{
+        fill: '#4aea15',
+        transform: 'rotate(180deg)',
+        height: 'calc( ' + config.toolbarStyle.height + ' - ' + '1px' + ' )'
+      }"
+      viewBox="0 0 44.384369 26.455919"
+      id="svg1438"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:svg="http://www.w3.org/2000/svg"
+    >
+      <g id="layer1" transform="translate(-82.251112,-149.39059)">
+        <path
+          id="toolbarCircleCut"
+          style="
+            stroke: none;
+            stroke-width: 0;
+            stroke-miterlimit: 4;
+            stroke-dasharray: none;
+            stroke-dashoffset: 0;
+            stroke-opacity: 1;
+          "
+          d="m 81.534454,149.39059 v 26.45592 h 45.849376 v -26.45592 0 c -0.72321,11.74527 -10.76993,20.91385 -22.92442,20.92069 -12.154691,-0.007 -22.201723,-9.17522 -22.924956,-20.92069 z"
+        />
+      </g>
+    </svg>
+
+    <!--CIRCLE-->
+    <div class="toolbarCircle"></div>
+  </div>
+  <!--RIGHT-->
+  <div
+    [ngStyle]="{
+      flex: '1 1',
+
+      background: config.toolbarStyle.background,
+      height: config.toolbarStyle.height
+    }"
+  ></div>
+</div>

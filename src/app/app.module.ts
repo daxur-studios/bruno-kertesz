@@ -32,6 +32,7 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { provideMessaging,getMessaging } from '@angular/fire/messaging';
 import { TechStackGalleryComponent } from './pages/welcome/sections/tech-stack-gallery/tech-stack-gallery.component';
+import { CurveToolbarComponent } from './components/curve-toolbar/curve-toolbar.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { TechStackGalleryComponent } from './pages/welcome/sections/tech-stack-g
     TimelineWrapperComponent,
     TimelineCardComponent,
     TechStackGalleryComponent,
+    CurveToolbarComponent,
   ],
   imports: [
     BrowserModule,

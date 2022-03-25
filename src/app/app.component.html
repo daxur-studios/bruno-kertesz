@@ -12,7 +12,7 @@
   >
 
   <a routerLink="/online-cv" routerLinkActive="activeLink" class="styledLink"
-    >Online CV</a
+    >CV</a
   >
 
   <!--
@@ -25,5 +25,16 @@
 
   [TODO]: compress images!
 </mat-toolbar>
+
+<app-curve-toolbar
+  [config]="{
+    toolbarStyle: {
+      height: '50px',
+      background: 'rgb(234 213 21)'
+    }
+  }"
+></app-curve-toolbar>
+
+[THIS PAGE IS STILL IN DEVELOPMENT]
 
 <router-outlet></router-outlet>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="44.384369mm"
+   height="26.455919mm"
+   viewBox="0 0 44.384369 26.455919"
+   version="1.1"
+   id="svg1438"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="svgToolbarMiddle.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1440"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="5.6568543"
+     inkscape:cx="103.06081"
+     inkscape:cy="58.689863"
+     inkscape:window-width="2560"
+     inkscape:window-height="1334"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1435" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-82.251112,-149.39059)">
+    <path
+       id="toolbarCircleCut"
+       style="fill:#4aea15;stroke:none;stroke-width:0.134458;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 81.534454,149.39059 v 26.45592 h 45.849376 v -26.45592 0 c -0.72321,11.74527 -10.76993,20.91385 -22.92442,20.92069 -12.154691,-0.007 -22.201723,-9.17522 -22.924956,-20.92069 z"
+       sodipodi:nodetypes="cccccccc" />
+  </g>
+</svg>

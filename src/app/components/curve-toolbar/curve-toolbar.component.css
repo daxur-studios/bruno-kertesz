@@ -1,0 +1,28 @@
+.outerBars {
+  border-radius: 15px;
+  flex: 1 1;
+}
+
+.innerBars {
+  border-radius: 40px;
+  flex: 1 1;
+}
+
+.innerBarWrapper {
+  position: relative;
+  margin-right: -1px;
+  margin-left: -1px;
+}
+.toolbarCircle {
+  position: absolute;
+  background: red;
+  border-radius: 50px;
+  width: 47px;
+  height: 47px;
+  left: 50%;
+  transform: translate(-50%);
+  top: 26px;
+}
+
+.svgToolbarMiddle {
+}
