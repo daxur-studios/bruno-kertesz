@@ -38,7 +38,7 @@ export class OnlineCvComponent implements OnInit {
       {
         title: 'Apprenticeship at CD Automation UK Ltd',
         body: [
-          'Level 1 Diploma in Business Administration',
+          'Level 2 Diploma in Business Administration',
           'Zapier, Integration of web applications used in our Order Processing',
           'Spreadsheet & Email Automation using Javascript in Google Apps Script',
           'Learning Photoshop for Raster Image Editing & Inkscape for Vector Image Editing',
