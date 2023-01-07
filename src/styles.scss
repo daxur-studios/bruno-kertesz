@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-@import "app/theme/appTheme.css";
-@import "app/sharedStyles/sections.css";
+// @import "app/theme/appTheme.css";
+// @import "app/sharedStyles/sections.css";
+
+@use "app/theme/appTheme.scss";
 
 html,
 body {

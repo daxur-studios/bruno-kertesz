@@ -13,7 +13,7 @@ export class BrunoService {
 
   nationality: nationality = 'Hungarian';
 
-  address = 'Eastbourne, UK';
+  address = 'Alton, UK';
 
   constructor() {
     this.age = differenceInYears(new Date(), this.dateOfBirth);
